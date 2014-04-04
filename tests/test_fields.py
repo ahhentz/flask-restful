@@ -193,7 +193,7 @@ class FieldsTestCase(unittest.TestCase):
 
     def test_float(self):
         field = fields.Float()
-        self.assertEquals('3.0', field.output("hey", {'hey': 3.0}))
+        self.assertEquals(3.0, field.output("hey", {'hey': 3.0}))
 
     def test_float_decode_error(self):
         field = fields.Float()
